@@ -15,6 +15,10 @@ reuse-fetched-source: true
 distributions:
  - host-fc32
 
++components:
+  - release-configs:
+      fetch-versions-only: false
+
 sign-key:
   rpm: '9C884DF3F81064A569A4A9FAE022E58F8E34D89F'
 
