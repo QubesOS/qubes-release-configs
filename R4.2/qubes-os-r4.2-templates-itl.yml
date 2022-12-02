@@ -16,7 +16,10 @@ reuse-fetched-source: true
 
 distributions: []
 
-components: []
+components:
+  - release-configs:
+      fetch-versions-only: false
+
 
 templates:
   - fedora-36:
