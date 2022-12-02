@@ -20,6 +20,8 @@ distributions:
   - release-configs:
       fetch-versions-only: false
 
+templates: []
+
 sign-key:
   deb: '0EBE5463493CC30421DA8AC45BB71C441BCB10FE'
 

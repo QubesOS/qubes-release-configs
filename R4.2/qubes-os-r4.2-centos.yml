@@ -19,6 +19,8 @@ distributions:
   - release-configs:
       fetch-versions-only: false
 
+templates: []
+
 sign-key:
   rpm: '73BC8FF2264EDBB20CF1C2739AD8A2F644606AB9'
 
