@@ -1,0 +1,52 @@
+# Configuration for qubes build server: Qubes R4.2 - templates-itl
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-r4.2.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  templates: templates-itl-testing
+
+use-qubes-repo:
+  version: '4.2'
+  testing: true
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions: []
+
+components: []
+
+templates:
+  - fedora-36:
+      dist: fc36
+  - fedora-37:
+      dist: fc37
+  - debian-11:
+      dist: bullseye
+      options:
+        - standard
+        - firmware
+  - debian-12:
+      dist: bookworm
+      options:
+        - standard
+        - firmware
+
+sign-key:
+  rpm: '9C884DF3F81064A569A4A9FAE022E58F8E34D89F'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.2'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      distributions: _all_
+      components: _all_
