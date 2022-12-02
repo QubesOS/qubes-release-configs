@@ -44,9 +44,7 @@ github:
   maintainers:
     # marmarek
     '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
-      distributions: _all_
-      components: _all_
+      templates: _all_
     # simon
     '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
-      distributions: _all_
-      components: _all_
+      templates: _all_
