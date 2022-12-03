@@ -5,6 +5,7 @@ include:
 
 gpg-client: qubes-gpg-client-wrapper
 repository-publish:
+  components: current-testing
   templates: templates-itl-testing
 
 use-qubes-repo:
