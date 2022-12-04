@@ -1,0 +1,75 @@
+# Configuration for qubes build server: Qubes R4.2 - templates-community
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-r4.2.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+  templates: templates-community-testing
+
+use-qubes-repo:
+  version: '4.2'
+  testing: true
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions: []
+
+components:
+  - release-configs:
+      fetch-versions-only: false
+
+templates:
+  - whonix-gw-16:
+      dist: bullseye
+      flavor: whonix-gateway
+      options:
+        - minimal
+        - no-recommends
+      timeout: 5400
+  - whonix-ws-16:
+      dist: bullseye
+      flavor: whonix-workstation
+      options:
+        - minimal
+        - no-recommends
+      timeout: 5400
+  - centos-stream-8:
+      dist: centos-stream8
+      timeout: 5400
+  - centos-stream-8-minimal:
+      dist: centos-stream8
+      flavor: minimal
+      timeout: 5400
+  - centos-stream-8-xfce:
+      dist: centos-stream8
+      flavor: xfce
+      timeout: 5400
+
+sign-key:
+  rpm: 'E605E13CF2F787DC9F457AFC60D831AF4091C1E0'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.2'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      templates: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      templates: _all_
+    # adrelanos
+    '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA':
+      templates:
+        - whonix-gw-16
+        - whonix-ws-16
+    # fepitre
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      templates:
+        - centos-stream-8
+        - centos-stream-8-minimal
+        - centos-stream-8-xfce
