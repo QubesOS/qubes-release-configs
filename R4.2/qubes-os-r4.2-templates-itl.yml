@@ -26,20 +26,48 @@ templates:
   - fedora-36:
       dist: fc36
       timeout: 5400
+  - fedora-36-xfce:
+      dist: fc36
+      timeout: 5400
+      flavor: xfce
+  - fedora-36-minimal:
+      dist: fc36
+      timeout: 5400
+      flavor: minimal
   - fedora-37:
       dist: fc37
       timeout: 5400
+  - fedora-37-xfce:
+      dist: fc37
+      timeout: 5400
+      flavor: xfce
+  - fedora-37-minimal:
+      dist: fc37
+      timeout: 5400
+      flavor: minimal
   - debian-11:
       dist: bullseye
       options:
         - standard
         - firmware
       timeout: 5400
+  - debian-11-minimal:
+      dist: bullseye
+      options:
+        - minimal
+        - no-recommends
+      timeout: 5400
   - debian-12:
       dist: bookworm
       options:
         - standard
         - firmware
+      timeout: 5400
+  - debian-12-minimal:
+      dist: bookworm
+      options:
+        - minimal
+        - no-recommends
       timeout: 5400
 
 sign-key:
