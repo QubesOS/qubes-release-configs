@@ -20,6 +20,12 @@ distributions: []
 components:
   - release-configs:
       fetch-versions-only: false
+  - builder-rpm:
+      packages: False
+  - builder-debian:
+      packages: False
+  - template-whonix:
+      packages: False
 
 templates:
   - whonix-gw-16:
