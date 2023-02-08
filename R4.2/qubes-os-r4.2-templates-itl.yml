@@ -22,8 +22,10 @@ components:
       fetch-versions-only: false
   - builder-rpm:
       packages: False
+      fetch-versions-only: false
   - builder-debian:
       packages: False
+      fetch-versions-only: false
 
 templates:
   - fedora-36:
