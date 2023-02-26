@@ -30,9 +30,13 @@ components:
 templates:
   - fedora-36:
       dist: fc36
+      options:
+       - selinux
       timeout: 7200
   - fedora-36-xfce:
       dist: fc36
+      options:
+       - selinux
       timeout: 7200
       flavor: xfce
   - fedora-36-minimal:
@@ -41,9 +45,13 @@ templates:
       flavor: minimal
   - fedora-37:
       dist: fc37
+      options:
+       - selinux
       timeout: 7200
   - fedora-37-xfce:
       dist: fc37
+      options:
+       - selinux
       timeout: 7200
       flavor: xfce
   - fedora-37-minimal:
