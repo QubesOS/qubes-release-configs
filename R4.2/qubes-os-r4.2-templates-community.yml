@@ -82,7 +82,4 @@ github:
         - whonix-ws-16
     # fepitre
     '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
-      templates:
-        - centos-stream-8
-        - centos-stream-8-minimal
-        - centos-stream-8-xfce
+      templates: _all_
