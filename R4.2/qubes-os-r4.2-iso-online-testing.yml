@@ -1,0 +1,48 @@
+verbose: true
+debug: true
+backend-vmm: xen
+gpg-client: qubes-gpg-client-wrapper
+qubes-release: r4.2
+use-qubes-repo:
+  version: 4.2
+  testing: true
+
+distributions:
+  - host-fc37
+
+stages:
+  - fetch
+  - prep
+  - build
+  - sign:
+      executor:
+        type: local
+  - publish:
+      executor:
+        type: local
+  - upload:
+      executor:
+        type: local
+
+executor:
+  type: qubes
+  options:
+    dispvm: "builder-dvm"
+
+iso:
+  kickstart: conf/iso-online-testing.ks
+
+sign-key:
+  iso: "9B7E61D3BB70C4B1335CE5B67B72A119CCCA57BB"
+
+repository-upload-remote-host:
+  iso: qubes.notset.fr:/data/qubes/iso-testing/
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      iso: true
+    # fepitre
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      iso: true
