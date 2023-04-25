@@ -22,10 +22,10 @@ distributions:
 templates: []
 
 sign-key:
-  rpm: 'E5001C1D49BE9129DEEC06284C6270146C463D90'
+  archlinux: 'E5001C1D49BE9129DEEC06284C6270146C463D90'
 
 repository-upload-remote-host:
-  rpm: 'archlinux.qubes-os.org:/pub/qubes/repo/archlinux/r4.2'
+  archlinux: 'archlinux.qubes-os.org:/pub/qubes/repo/archlinux/r4.2'
 
 github:
   maintainers:
