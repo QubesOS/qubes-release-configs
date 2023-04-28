@@ -26,6 +26,9 @@ components:
   - builder-debian:
       packages: False
       fetch-versions-only: false
+  - builder-archlinux:
+      packages: False
+      fetch-versions-only: false
   - template-whonix:
       packages: False
       fetch-versions-only: false
@@ -59,6 +62,9 @@ templates:
   - centos-stream-8-xfce:
       dist: centos-stream8
       flavor: xfce
+      timeout: 5400
+  - archlinux:
+      dist: archlinux
       timeout: 5400
 
 sign-key:
