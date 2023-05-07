@@ -95,7 +95,6 @@ templates:
       dist: bookworm
       flavor: minimal
       options:
-        - minimal
         - no-recommends
       timeout: 5400
 
