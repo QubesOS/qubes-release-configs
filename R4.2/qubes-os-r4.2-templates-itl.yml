@@ -75,24 +75,25 @@ templates:
       flavor: minimal
   - debian-11:
       dist: bullseye
+      flavor: gnome
       options:
-        - standard
         - firmware
       timeout: 5400
   - debian-11-minimal:
       dist: bullseye
+      flavor: minimal
       options:
-        - minimal
         - no-recommends
       timeout: 5400
   - debian-12:
       dist: bookworm
+      flavor: gnome
       options:
-        - standard
         - firmware
       timeout: 5400
   - debian-12-minimal:
       dist: bookworm
+      flavor: minimal
       options:
         - minimal
         - no-recommends
