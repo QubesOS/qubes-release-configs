@@ -23,6 +23,7 @@ templates: []
 
 sign-key:
   rpm: '9C884DF3F81064A569A4A9FAE022E58F8E34D89F'
+  iso: '9C884DF3F81064A569A4A9FAE022E58F8E34D89F'
 
 repository-upload-remote-host:
   rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.2'
