@@ -100,6 +100,8 @@ github:
       templates:
         - whonix-gw-16
         - whonix-ws-16
+        - whonix-gateway-17
+        - whonix-workstation-17
     # fepitre
     '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
       templates: _all_
