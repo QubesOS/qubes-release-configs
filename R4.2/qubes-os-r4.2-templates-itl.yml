@@ -20,12 +20,15 @@ distributions: []
 components:
   - release-configs:
       fetch-versions-only: false
+      branch: main
   - builder-rpm:
       packages: False
       fetch-versions-only: false
+      branch: main
   - builder-debian:
       packages: False
       fetch-versions-only: false
+      branch: main
 
 templates:
   - fedora-36:

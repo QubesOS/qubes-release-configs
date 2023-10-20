@@ -19,6 +19,7 @@ distributions:
 +components:
   - release-configs:
       fetch-versions-only: false
+      branch: main
 
 templates: []
 

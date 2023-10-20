@@ -18,6 +18,7 @@ distributions:
 +components:
   - release-configs:
       fetch-versions-only: false
+      branch: main
   - linux-kernel-515:
       url: https://github.com/QubesOS/qubes-linux-kernel
       branch: stable-5.15
