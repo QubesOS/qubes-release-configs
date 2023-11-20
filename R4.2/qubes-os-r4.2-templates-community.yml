@@ -40,6 +40,11 @@ components:
       url: https://github.com/Whonix/qubes-template-whonix
       maintainers:
         - '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'
+  - builder-gentoo:
+      packages: False
+      fetch-versions-only: false
+      maintainers:
+        - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
 
 templates:
   - whonix-gw-16:
@@ -84,6 +89,17 @@ templates:
   - archlinux:
       dist: archlinux
       timeout: 5400
+  - gentoo:
+      dist: gentoo
+      timeout: 86400
+  - gentoo-minimal:
+      dist: gentoo
+      flavor: minimal
+      timeout: 86400
+  - gentoo-xfce:
+      dist: gentoo
+      flavor: xfce
+      timeout: 86400
 
 sign-key:
   rpm: '8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3'
