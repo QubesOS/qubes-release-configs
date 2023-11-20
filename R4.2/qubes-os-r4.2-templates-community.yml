@@ -43,6 +43,7 @@ components:
   - builder-gentoo:
       packages: False
       fetch-versions-only: false
+      branch: main
       maintainers:
         - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
 
