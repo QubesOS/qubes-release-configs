@@ -46,6 +46,12 @@ components:
       branch: main
       maintainers:
         - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
+  - template-kali:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+      maintainers:
+        - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
 
 templates:
   - whonix-gw-16:
@@ -101,6 +107,12 @@ templates:
       dist: gentoo
       flavor: xfce
       timeout: 86400
+  - kali:
+      dist: bookworm
+      flavor: kali
+  - kali-core:
+      dist: bookworm
+      flavor: kali-core
 
 sign-key:
   rpm: '8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3'
