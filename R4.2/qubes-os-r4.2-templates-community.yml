@@ -111,9 +111,11 @@ templates:
   - kali:
       dist: bookworm
       flavor: kali
+      timeout: 21600
   - kali-core:
       dist: bookworm
       flavor: kali-core
+      timeout: 21600
 
 sign-key:
   rpm: '8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3'
