@@ -96,7 +96,7 @@ templates:
       timeout: 5400
   - archlinux:
       dist: archlinux
-      timeout: 5400
+      timeout: 7200
   - gentoo:
       dist: gentoo
       timeout: 86400
