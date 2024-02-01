@@ -13,7 +13,6 @@ fetch-versions-only: true
 reuse-fetched-source: true
 
 distributions:
- - vm-bullseye
  - vm-bookworm
  - vm-trixie
 
