@@ -12,8 +12,7 @@ use-qubes-repo: {}
 fetch-versions-only: true
 reuse-fetched-source: true
 
-distributions:
- - vm-centos-stream8
+distributions: []
 
 +components:
   - release-configs:
