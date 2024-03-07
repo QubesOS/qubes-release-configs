@@ -19,6 +19,10 @@ distributions:
   - release-configs:
       fetch-versions-only: false
       branch: main
+  - linux-kernel-61:
+      url: https://github.com/QubesOS/qubes-linux-kernel
+      branch: stable-6.1
+      timeout: 21600
   - linux-kernel-515:
       url: https://github.com/QubesOS/qubes-linux-kernel
       branch: stable-5.15
