@@ -90,6 +90,7 @@ templates:
   - fedora-39-minimal:
       dist: fc39
       timeout: 7200
+      flavor: minimal
   - fedora-40:
       dist: fc40
       options:
@@ -104,7 +105,6 @@ templates:
   - fedora-40-minimal:
       dist: fc40
       timeout: 7200
-      flavor: minimal
       flavor: minimal
   - debian-11:
       dist: bullseye
