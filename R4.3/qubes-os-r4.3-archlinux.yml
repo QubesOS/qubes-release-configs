@@ -1,0 +1,41 @@
+# Configuration for qubes build server: Qubes R4.3 - Archlinux packages
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-r4.3.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo: {}
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions:
+ - vm-archlinux
+
++components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+
+templates: []
+
+sign-key:
+  archlinux: 'F3DFBD70558A3F45F01A7BA3AB187C9F85BDFCC0'
+
+repository-upload-remote-host:
+  archlinux: 'archlinux.qubes-os.org:/pub/qubes/repo/archlinux/r4.3'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      distributions: _all_
+      components: _all_
+

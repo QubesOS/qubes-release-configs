@@ -1,0 +1,96 @@
+# Configuration for qubes build server: Qubes R4.3 - templates-itl
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-r4.3.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+  templates: templates-itl-testing
+
+use-qubes-repo:
+  version: '4.3'
+  testing: true
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions: []
+
+components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+  - builder-rpm:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+  - builder-debian:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+
+templates:
+  - fedora-39:
+      dist: fc39
+      options:
+       - selinux
+      timeout: 7200
+  - fedora-39-xfce:
+      dist: fc39
+      options:
+       - selinux
+      timeout: 7200
+      flavor: xfce
+  - fedora-39-minimal:
+      dist: fc39
+      timeout: 7200
+      flavor: minimal
+  - fedora-40:
+      dist: fc40
+      options:
+       - selinux
+      timeout: 7200
+  - fedora-40-xfce:
+      dist: fc40
+      options:
+       - selinux
+      timeout: 7200
+      flavor: xfce
+  - fedora-40-minimal:
+      dist: fc40
+      timeout: 7200
+      flavor: minimal
+  - debian-12:
+      dist: bookworm
+      flavor: gnome
+      options:
+        - firmware
+      timeout: 5400
+  - debian-12-minimal:
+      dist: bookworm
+      flavor: minimal
+      options:
+        - no-recommends
+      timeout: 5400
+  - debian-12-xfce:
+      dist: bookworm
+      flavor: xfce
+      options:
+        - firmware
+      timeout: 5400
+
+sign-key:
+  rpm: 'F3FA3F99D6281F7B3A3E5E871C3D9B627F3FADA4'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.3'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      templates: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      templates: _all_

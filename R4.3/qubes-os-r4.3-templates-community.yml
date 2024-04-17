@@ -1,0 +1,127 @@
+# Configuration for qubes build server: Qubes R4.3 - templates-community
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-r4.3.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+  templates: templates-community-testing
+
+use-qubes-repo:
+  version: '4.3'
+  testing: true
+
+fetch-versions-only: true
+reuse-fetched-source: true
+
+distributions: []
+
+components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+  - builder-rpm:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+  - builder-debian:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+  - builder-archlinux:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+  - template-whonix:
+      packages: False
+      fetch-versions-only: false
+      branch: master
+      url: https://github.com/Whonix/qubes-template-whonix
+      maintainers:
+        - '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'
+  - builder-gentoo:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+      maintainers:
+        - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
+  - template-kali:
+      packages: False
+      fetch-versions-only: false
+      branch: master
+      url: https://github.com/fepitre/qubes-template-kali
+      maintainers:
+        - '9FA64B92F95E706BF28E2CA6484010B5CDC576E2'
+
+templates:
+  - whonix-gateway-17:
+      dist: bookworm
+      flavor: whonix-gateway
+      options:
+        - minimal
+        - no-recommends
+      timeout: 5400
+  - whonix-workstation-17:
+      dist: bookworm
+      flavor: whonix-workstation
+      options:
+        - minimal
+        - no-recommends
+      timeout: 5400
+  - centos-stream-8:
+      dist: centos-stream8
+      timeout: 5400
+  - centos-stream-8-minimal:
+      dist: centos-stream8
+      flavor: minimal
+      timeout: 5400
+  - centos-stream-8-xfce:
+      dist: centos-stream8
+      flavor: xfce
+      timeout: 5400
+  - archlinux:
+      dist: archlinux
+      timeout: 7200
+  - gentoo:
+      dist: gentoo
+      timeout: 86400
+  - gentoo-minimal:
+      dist: gentoo
+      flavor: minimal
+      timeout: 86400
+  - gentoo-xfce:
+      dist: gentoo
+      flavor: xfce
+      timeout: 86400
+  - kali:
+      dist: bookworm
+      flavor: kali
+      timeout: 21600
+  - kali-core:
+      dist: bookworm
+      flavor: kali-core
+      timeout: 21600
+
+sign-key:
+  rpm: 'TODO'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.3'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      templates: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      templates: _all_
+    # adrelanos
+    '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA':
+      templates:
+        - whonix-gateway-17
+        - whonix-workstation-17
+    # fepitre
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      templates: _all_
