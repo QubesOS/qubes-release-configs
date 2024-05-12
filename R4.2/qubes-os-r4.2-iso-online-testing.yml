@@ -7,7 +7,7 @@ use-qubes-repo:
   version: 4.2
   testing: true
 
-timeout: 7200
+timeout: 21600
 
 distributions:
   - host-fc37
