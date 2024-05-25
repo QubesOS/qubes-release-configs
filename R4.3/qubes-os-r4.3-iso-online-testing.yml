@@ -9,6 +9,14 @@ use-qubes-repo:
 
 timeout: 21600
 
+components:
+  # needed for kickstart
+  - qubes-release:
+      packages: false
+      maintainers:
+        # marmarek
+        - '0064428F455451B3EBE78A7F063938BA42CFA724'
+
 distributions:
   - host-fc37
 
