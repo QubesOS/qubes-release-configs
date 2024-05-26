@@ -104,7 +104,7 @@ templates:
       timeout: 21600
 
 sign-key:
-  rpm: 'TODO'
+  rpm: '27219F358EDCBF6681314B0B2A4BA672B8D0B898'
 
 repository-upload-remote-host:
   rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/r4.3'
