@@ -66,19 +66,19 @@ templates:
       flavor: gnome
       options:
         - firmware
-      timeout: 5400
+      timeout: 7200
   - debian-12-minimal:
       dist: bookworm
       flavor: minimal
       options:
         - no-recommends
-      timeout: 5400
+      timeout: 7200
   - debian-12-xfce:
       dist: bookworm
       flavor: xfce
       options:
         - firmware
-      timeout: 5400
+      timeout: 7200
 
 sign-key:
   rpm: 'F3FA3F99D6281F7B3A3E5E871C3D9B627F3FADA4'
