@@ -21,6 +21,13 @@ components:
 distributions:
   - host-fc37
 
+cache:
+  templates:
+  - debian-12-xfce
+  - fedora-40-xfce
+  - whonix-gateway-17
+  - whonix-workstation-17
+
 stages:
   - fetch
   - prep
