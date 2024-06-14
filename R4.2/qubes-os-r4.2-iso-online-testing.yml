@@ -17,6 +17,14 @@ components:
       maintainers:
         # marmarek
         - '0064428F455451B3EBE78A7F063938BA42CFA724'
+  - release-configs:
+      packages: false
+      fetch-versions-only: false
+      branch: main
+      maintainers:
+        # marmarek
+        - '0064428F455451B3EBE78A7F063938BA42CFA724'
+
 
 distributions:
   - host-fc37
