@@ -17,10 +17,8 @@ distributions:
 
 mirrors:
  vm-archlinux:
- - "https://mirror.osbeck.com/archlinux"
  - "https://md.mirrors.hacktegic.com/archlinux"
  - "https://us.mirrors.cicku.me/archlinux"
- - "https://mirror.tmmworkshop.com/archlinux"
  - "https://mirror3.sl-chat.ru/archlinux"
  - "https://america.mirror.pkgbuild.com"
  - "https://europe.mirror.pkgbuild.com"
@@ -29,9 +27,7 @@ mirrors:
  - "https://mirror.sahil.world/archlinux"
  - "https://archlinux.thaller.ws"
  - "https://mirrors.lug.mtu.edu/archlinux"
- - "https://mirrors.qontinuum.space/archlinux"
  - "https://geo.mirror.pkgbuild.com"
- - "https://mirror.f4st.host/archlinux"
  - "https://mirror.lty.me/archlinux"
  - "https://ftp.acc.umu.se/mirror/archlinux"
  - "https://arch.jensgutermuth.de"
@@ -57,7 +53,6 @@ mirrors:
  - "https://archmirror1.octyl.net"
  - "https://mirrors.melbourne.co.uk/archlinux"
  - "https://iad.mirrors.misaka.one/archlinux"
- - "https://mirror.erickochen.nl/archlinux"
  - "https://arch.kurdy.org"
  - "https://mirror.pseudoform.org"
  - "https://mirrors.atviras.lt/archlinux"
@@ -66,7 +61,6 @@ mirrors:
  - "https://mirror.ubrco.de/archlinux"
  - "https://mirrors.vectair.net/archlinux"
  - "https://irltoolkit.mm.fcix.net/archlinux"
- - "https://archmirror.it/repos"
  - "https://mirror.nag.albony.in/archlinux"
  - "https://seoul.mirror.pkgbuild.com"
  - "https://ziply.mm.fcix.net/archlinux"
@@ -87,7 +81,6 @@ mirrors:
  - "https://archlinux.mivzakim.net"
  - "https://mirror.albony.in/archlinux"
  - "https://mirror.sfo12.us.leaseweb.net/archlinux"
- - "https://mirror.ibakerserver.pt/Arch"
  - "https://mirror.juniorjpdj.pl/archlinux"
 
 +components:
