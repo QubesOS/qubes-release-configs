@@ -13,7 +13,7 @@ fetch-versions-only: true
 reuse-fetched-source: true
 
 distributions:
- - host-fc37
+ - host-fc41
 
 +components:
   - release-configs:
