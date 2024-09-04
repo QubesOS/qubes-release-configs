@@ -25,7 +25,7 @@ components:
         - '0064428F455451B3EBE78A7F063938BA42CFA724'
 
 distributions:
-  - host-fc37
+  - host-fc41
 
 cache:
   templates:
