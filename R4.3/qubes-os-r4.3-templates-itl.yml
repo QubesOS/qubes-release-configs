@@ -61,6 +61,21 @@ templates:
       dist: fc40
       timeout: 7200
       flavor: minimal
+  - fedora-41:
+      dist: fc41
+      options:
+       - selinux
+      timeout: 7200
+  - fedora-41-xfce:
+      dist: fc41
+      options:
+       - selinux
+      timeout: 7200
+      flavor: xfce
+  - fedora-41-minimal:
+      dist: fc41
+      timeout: 7200
+      flavor: minimal
   - debian-12:
       dist: bookworm
       flavor: gnome
