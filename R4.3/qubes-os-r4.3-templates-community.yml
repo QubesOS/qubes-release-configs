@@ -61,6 +61,7 @@ templates:
       options:
         - minimal
         - no-recommends
+        - install-kernel
       timeout: 5400
   - whonix-workstation-17:
       dist: bookworm
@@ -68,6 +69,7 @@ templates:
       options:
         - minimal
         - no-recommends
+        - install-kernel
       timeout: 5400
   - centos-stream-8:
       dist: centos-stream8
