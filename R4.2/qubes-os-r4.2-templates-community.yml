@@ -55,7 +55,7 @@ components:
         # fepitre's @qubes-os.org
         - 9FA64B92F95E706BF28E2CA6484010B5CDC576E2
         # fepitre's @invisiblethingslab.com
-        - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E
+        - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E6
   - template-kali:
       packages: False
       fetch-versions-only: false
@@ -65,7 +65,7 @@ components:
         # fepitre's @qubes-os.org
         - 9FA64B92F95E706BF28E2CA6484010B5CDC576E2
         # fepitre's @invisiblethingslab.com
-        - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E
+        - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E6
 
 templates:
   - whonix-gw-16:
