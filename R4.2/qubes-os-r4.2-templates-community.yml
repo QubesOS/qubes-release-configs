@@ -129,11 +129,11 @@ templates:
       flavor: xfce
       timeout: 86400
   - kali:
-      dist: bookworm
+      dist: trixie
       flavor: kali
       timeout: 21600
   - kali-core:
-      dist: bookworm
+      dist: trixie
       flavor: kali-core
       timeout: 21600
 
