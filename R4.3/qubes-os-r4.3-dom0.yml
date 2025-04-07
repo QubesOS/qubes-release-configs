@@ -14,6 +14,20 @@ reuse-fetched-source: true
 
 distributions:
  - host-fc41
+ - vm-win10:
+     stages:
+     - build:
+         configuration: release
+         sign-qube: "@default"
+         sign-key-name: "Qubes Windows Tools"
+         test-sign: true
+         executor:
+           type: windows
+           options:
+             dispvm: builder-windows-dvm
+             user: user
+             ewdk: /home/user/Downloads/ewdk.iso
+             threads: 2
 
 +components:
   - release-configs:
