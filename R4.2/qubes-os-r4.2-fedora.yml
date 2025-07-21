@@ -13,7 +13,6 @@ fetch-versions-only: true
 reuse-fetched-source: true
 
 distributions:
- - vm-fc40
  - vm-fc41
  - vm-fc42
 
