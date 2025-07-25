@@ -166,6 +166,24 @@ templates:
       options:
         - firmware
       timeout: 5400
+  - debian-13:
+      dist: trixie
+      flavor: gnome
+      options:
+        - firmware
+      timeout: 7200
+  - debian-13-minimal:
+      dist: trixie
+      flavor: minimal
+      options:
+        - no-recommends
+      timeout: 7200
+  - debian-13-xfce:
+      dist: trixie
+      flavor: xfce
+      options:
+        - firmware
+      timeout: 7200
 
 sign-key:
   rpm: '9C884DF3F81064A569A4A9FAE022E58F8E34D89F'
