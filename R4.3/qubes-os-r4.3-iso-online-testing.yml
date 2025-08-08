@@ -29,8 +29,8 @@ distributions:
 
 cache:
   templates:
-  - debian-12-xfce
-  - fedora-40-xfce
+  - debian-13-xfce
+  - fedora-42-xfce
   - whonix-gateway-17
   - whonix-workstation-17
 
