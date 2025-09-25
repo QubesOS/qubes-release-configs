@@ -36,14 +36,14 @@ components:
   - template-whonix:
       packages: False
       fetch-versions-only: false
-      branch: master
+      branch: bookworm
       url: https://github.com/Whonix/qubes-template-whonix
       maintainers:
         - '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'
   - template-kicksecure:
       packages: False
       fetch-versions-only: false
-      branch: master
+      branch: bookworm
       url: https://github.com/Kicksecure/qubes-template-kicksecure
       maintainers:
         - '916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'
