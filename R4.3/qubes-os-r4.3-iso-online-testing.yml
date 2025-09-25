@@ -31,8 +31,8 @@ cache:
   templates:
   - debian-13-xfce
   - fedora-42-xfce
-  - whonix-gateway-17
-  - whonix-workstation-17
+  - whonix-gateway-18
+  - whonix-workstation-18
 
 stages:
   - fetch
