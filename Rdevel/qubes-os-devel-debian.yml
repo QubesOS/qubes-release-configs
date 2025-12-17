@@ -7,7 +7,9 @@ gpg-client: qubes-gpg-client-wrapper
 repository-publish:
   components: current-testing
 
-use-qubes-repo: {}
+use-qubes-repo:
+  version: '4.3'
+  testing: true
 
 fetch-versions-only: false
 increment-devel-versions: true
