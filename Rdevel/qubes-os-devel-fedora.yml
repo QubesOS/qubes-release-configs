@@ -1,0 +1,44 @@
+# Configuration for qubes build server: Qubes devel - Fedora packages
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-main.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo: {}
+
+fetch-versions-only: false
+increment-devel-versions: true
+reuse-fetched-source: true
+
+distributions:
+ - vm-fc41
+ - vm-fc42
+ - vm-fc43
+
++components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+
+templates: []
+
+sign-key:
+  rpm: 'E885D9295FB5E4BC272250498F47FD359B49524F'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/devel'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      distributions: _all_
+      components: _all_
+

@@ -1,0 +1,56 @@
+# Configuration for qubes build server: Qubes devel - dom0 packages
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-main.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo: {}
+
+fetch-versions-only: false
+increment-devel-versions: true
+reuse-fetched-source: true
+
+distributions:
+ - host-fc41
+# - vm-win10:
+#     stages:
+#     - build:
+#         configuration: release
+#         sign-qube: "@default"
+#         sign-key-name: "Qubes Windows Tools"
+#         test-sign: true
+#         executor:
+#           type: windows
+#           options:
+#             dispvm: builder-windows-dvm
+#             user: user
+#             ewdk: /home/user/Downloads/ewdk.iso
+#             threads: 2
+
++components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+
+templates: []
+
+sign-key:
+  rpm: '02B0F900BE18482CC01FA754C7ABBE591CBE626C'
+  iso: '02B0F900BE18482CC01FA754C7ABBE591CBE626C'
+
+repository-upload-remote-host:
+  rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/devel'
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      distributions: _all_
+      components: _all_
