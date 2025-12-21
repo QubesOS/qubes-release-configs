@@ -74,6 +74,7 @@ templates:
       options:
         - minimal
         - no-recommends
+        - install-kernel
       timeout: 5400
   - whonix-workstation-18:
       dist: trixie
@@ -81,6 +82,7 @@ templates:
       options:
         - minimal
         - no-recommends
+        - install-kernel
       timeout: 5400
   - kicksecure-18:
       dist: trixie
