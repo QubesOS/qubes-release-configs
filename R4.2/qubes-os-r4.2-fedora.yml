@@ -15,6 +15,7 @@ reuse-fetched-source: true
 distributions:
  - vm-fc41
  - vm-fc42
+ - vm-fc43
 
 +components:
   - release-configs:
