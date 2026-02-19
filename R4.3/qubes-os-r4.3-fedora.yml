@@ -16,6 +16,7 @@ distributions:
  - vm-fc41
  - vm-fc42
  - vm-fc43
+ - vm-fc44
 
 +components:
   - release-configs:
