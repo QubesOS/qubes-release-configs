@@ -136,6 +136,21 @@ templates:
       dist: fc42
       timeout: 7200
       flavor: minimal
+  - fedora-43:
+      dist: fc43
+      options:
+       - selinux
+      timeout: 7200
+  - fedora-43-xfce:
+      dist: fc43
+      options:
+       - selinux
+      timeout: 7200
+      flavor: xfce
+  - fedora-43-minimal:
+      dist: fc43
+      timeout: 7200
+      flavor: minimal
   - debian-11:
       dist: bullseye
       flavor: gnome
