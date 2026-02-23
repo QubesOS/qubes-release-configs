@@ -33,6 +33,10 @@ distributions:
   - release-configs:
       fetch-versions-only: false
       branch: main
+  - linux-kernel-612:
+      url: https://github.com/QubesOS/qubes-linux-kernel
+      branch: stable-6.12
+      timeout: 21600
 
 templates: []
 
