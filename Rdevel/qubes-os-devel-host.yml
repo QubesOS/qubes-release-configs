@@ -47,6 +47,7 @@ repository-upload-remote-host:
   rpm: 'yum.qubes-os.org:/pub/qubes/repo/yum/devel'
 
 github:
+  message-templates-dir: /home/user/qubes-builderv2-github/templates-status-only
   maintainers:
     # marmarek
     '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
