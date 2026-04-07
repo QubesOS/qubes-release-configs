@@ -146,3 +146,9 @@ github:
     # fepitre
     '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
       templates: _all_
+    # unman
+    '4B1F400DF25651B53C4141B38B3F30F9C8C0C2EF':
+      templates:
+      - kali
+      - kali-core
+      - archlinux

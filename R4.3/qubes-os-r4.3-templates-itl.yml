@@ -172,3 +172,13 @@ github:
     # simon
     '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
       templates: _all_
+    # unman
+    '4B1F400DF25651B53C4141B38B3F30F9C8C0C2EF':
+      templates:
+      - debian-11
+      - debian-11-minimal
+      - debian-12
+      - debian-12-minimal
+      - debian-13
+      - debian-13-minimal
+      - debian-13-xfce
