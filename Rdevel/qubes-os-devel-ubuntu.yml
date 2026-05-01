@@ -1,0 +1,45 @@
+# Configuration for qubes build server: Qubes devel - Ubuntu packages
+
+include:
+ - /home/user/qubes-builderv2/example-configs/qubes-os-main.yml
+
+gpg-client: qubes-gpg-client-wrapper
+repository-publish:
+  components: current-testing
+
+use-qubes-repo:
+  version: '4.3'
+  testing: true
+
+fetch-versions-only: false
+increment-devel-versions: true
+reuse-fetched-source: true
+
+distributions:
+ - vm-noble
+
++components:
+  - release-configs:
+      fetch-versions-only: false
+      branch: main
+
+templates: []
+
+sign-key:
+  deb: '22F72FB0DCAC954029A0379EA06364A4DB9D4965'
+
+repository-upload-remote-host:
+  deb: 'debu.qubes-os.org:/pub/qubes/repo/debu/devel'
+
+github:
+  message-templates-dir: /home/user/qubes-builderv2-github/templates-status-only
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      distributions: _all_
+      components: _all_
+    # simon
+    '274E12AB03F2FE293765FC06DA0434BC706E1FCF':
+      distributions: _all_
+      components: _all_
+
