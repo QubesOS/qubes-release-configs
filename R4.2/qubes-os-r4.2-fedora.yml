@@ -17,7 +17,8 @@ distributions:
  - vm-fc42
  - vm-fc43
 
-+components:
+# EOL, disable components
+components:
   - release-configs:
       fetch-versions-only: false
       branch: main

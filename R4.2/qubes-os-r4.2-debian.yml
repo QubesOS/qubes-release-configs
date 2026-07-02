@@ -16,7 +16,8 @@ distributions:
  - vm-bookworm
  - vm-trixie
 
-+components:
+# EOL, disable components
+components:
   - release-configs:
       fetch-versions-only: false
       branch: main

@@ -14,7 +14,8 @@ reuse-fetched-source: true
 
 distributions: []
 
-+components:
+# EOL, disable components
+components:
   - release-configs:
       fetch-versions-only: false
       branch: main

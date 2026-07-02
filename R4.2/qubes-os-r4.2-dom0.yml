@@ -15,26 +15,12 @@ reuse-fetched-source: true
 distributions:
  - host-fc37
 
-+components:
+# EOL, but keep dist-upgrade component
+components:
   - release-configs:
       fetch-versions-only: false
       branch: main
-  - linux-kernel-61:
-      url: https://github.com/QubesOS/qubes-linux-kernel
-      branch: stable-6.1
-      timeout: 21600
-  - linux-kernel-515:
-      url: https://github.com/QubesOS/qubes-linux-kernel
-      branch: stable-5.15
-      timeout: 21600
-  - linux-kernel-66:
-      url: https://github.com/QubesOS/qubes-linux-kernel
-      branch: stable-6.6
-      timeout: 21600
-  - linux-kernel-612:
-      url: https://github.com/QubesOS/qubes-linux-kernel
-      branch: stable-6.12
-      timeout: 21600
+  - dist-upgrade
 
 templates: []
 

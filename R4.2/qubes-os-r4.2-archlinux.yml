@@ -83,7 +83,8 @@ mirrors:
  - "https://mirror.sfo12.us.leaseweb.net/archlinux"
  - "https://mirror.juniorjpdj.pl/archlinux"
 
-+components:
+# EOL, disable components
+components:
   - release-configs:
       fetch-versions-only: false
       branch: main
