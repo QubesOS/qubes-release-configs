@@ -30,7 +30,7 @@ distributions:
 cache:
   templates:
   - debian-13-xfce
-  - fedora-42-xfce
+  - fedora-44-xfce
   - whonix-gateway-18
   - whonix-workstation-18
 
