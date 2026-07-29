@@ -18,6 +18,7 @@ reuse-fetched-source: true
 distributions:
  - vm-fc43
  - vm-fc44
+ - vm-fc45
 
 +components:
   - release-configs:
