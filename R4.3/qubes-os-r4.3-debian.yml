@@ -15,6 +15,7 @@ reuse-fetched-source: true
 distributions:
  - vm-bookworm
  - vm-trixie
+ - vm-forky
 
 +components:
   - release-configs:
