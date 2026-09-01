@@ -1,0 +1,85 @@
+verbose: true
+debug: true
+backend-vmm: xen
+gpg-client: qubes-gpg-client-wrapper
+qubes-release: devel
+use-qubes-repo:
+  version: devel
+  testing: true
+
+timeout: 21600
+
+components:
+  # needed for kickstart
+  - qubes-release:
+      packages: false
+      branch: main
+      fetch-versions-only: false
+      maintainers:
+        # marmarek
+        - '0064428F455451B3EBE78A7F063938BA42CFA724'
+        # fepitre
+        - '77EEEF6D0386962AEA8CF84A9B8273F80AC219E6'
+  - release-configs:
+      packages: false
+      fetch-versions-only: false
+      branch: main
+      maintainers:
+        # marmarek
+        - '0064428F455451B3EBE78A7F063938BA42CFA724'
+
+distributions:
+  - host-fc41
+
+cache:
+  templates:
+  - debian-13-xfce
+  - fedora-44-xfce
+  - whonix-gateway-18
+  - whonix-workstation-18
+
+stages:
+  - fetch
+  - prep
+  - build
+  - sign:
+      executor:
+        type: local
+  - publish:
+      executor:
+        type: local
+  - upload:
+      executor:
+        type: local
+
+executor:
+  type: qubes
+  options:
+    dispvm: "builder-dvm"
+
+iso:
+  kickstart: conf/iso-online-testing.ks
+  templates:
+    - fedora-44-xfce
+    - debian-13-xfce
+    - whonix-gateway-18
+    - whonix-workstation-18
+  kickstart-vars:
+    QUBES_TEMPLATES_RELEASE: devel
+    QUBES_TEMPLATES_ITL_KEY: RPM-GPG-KEY-qubes-devel-primary
+    QUBES_TEMPLATES_COMMUNITY_KEY: RPM-GPG-KEY-qubes-devel-templates-community
+
+sign-key:
+  iso: "9B7E61D3BB70C4B1335CE5B67B72A119CCCA57BB"
+
+repository-upload-remote-host:
+  iso: qubes.notset.fr:/data/qubes/iso-testing/
+
+github:
+  maintainers:
+    # marmarek
+    '17B7CC1986BD3D28C41475B6846D6B709C6E2E7F':
+      iso: true
+    # fepitre
+    '9FA64B92F95E706BF28E2CA6484010B5CDC576E2':
+      iso: true
