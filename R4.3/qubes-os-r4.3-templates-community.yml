@@ -56,6 +56,11 @@ components:
         - 9FA64B92F95E706BF28E2CA6484010B5CDC576E2
         # fepitre's @invisiblethingslab.com
         - 77EEEF6D0386962AEA8CF84A9B8273F80AC219E6
+  - builder-guix:
+      packages: False
+      fetch-versions-only: false
+      branch: main
+      url: https://github.com/<OWNER>/qubes-builder-guix
   - template-kali:
       packages: False
       fetch-versions-only: false
@@ -114,6 +119,13 @@ templates:
       dist: gentoo
       flavor: xfce
       timeout: 86400
+  - guix:
+      dist: guix
+      timeout: 21600
+  - guix-minimal:
+      dist: guix
+      flavor: minimal
+      timeout: 21600
   - kali:
       dist: trixie
       flavor: kali
