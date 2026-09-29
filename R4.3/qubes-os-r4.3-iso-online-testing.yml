@@ -13,6 +13,7 @@ components:
   # needed for kickstart
   - qubes-release:
       packages: false
+      branch: release4.3
       maintainers:
         # marmarek
         - '0064428F455451B3EBE78A7F063938BA42CFA724'
