@@ -121,6 +121,21 @@ templates:
       dist: fc44
       timeout: 7200
       flavor: minimal
+  - fedora-45-gnome:
+      dist: fc45
+      options:
+       - selinux
+      timeout: 7200
+  - fedora-45-xfce:
+      dist: fc45
+      options:
+       - selinux
+      timeout: 7200
+      flavor: xfce
+  - fedora-45-minimal:
+      dist: fc45
+      timeout: 7200
+      flavor: minimal
   - debian-12:
       dist: bookworm
       flavor: gnome
